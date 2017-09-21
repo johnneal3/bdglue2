@@ -1,11 +1,11 @@
 Big Data Glue V2
 =====
-Author's Note: I wrote the original "Big Data Glue" (a.k.a. BDGlue) while I 
+_Author's Note: I wrote the original "Big Data Glue" (a.k.a. BDGlue) while I 
 was employed at Oracle (you can find the original version at 
 https://github.com/oracle/bdglue).  I have since left Oracle and no longer 
 have access to that repsoitory to commit changes. I have ideas for additional 
 capabilities and have created "Big Data Glue V2" (a.k.a. BDGlue2) to 
-support these enhancements going forward.
+support these enhancements going forward._
 
 BDGlue2 (like the original BDGlue) is intended to be a general purpose library 
 for delivering data from Java applications into various Big Data targets 
