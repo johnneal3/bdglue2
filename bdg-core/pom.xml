@@ -5,8 +5,8 @@
    <modelVersion>4.0.0</modelVersion>
 
    <parent>
-      <groupId>com.oracle.bdglue</groupId>
-      <artifactId>bdglue</artifactId>
+      <groupId>bdglue2</groupId>
+      <artifactId>bdglue2</artifactId>
       <version>1.3.0.0</version>
       <relativePath>../pom.xml</relativePath>
    </parent>
@@ -23,9 +23,9 @@
    </repositories>
    <dependencies>
      <dependency>
-        <groupId>gg12dbutil</groupId>  
-        <artifactId>ggdbutil</artifactId>  
-        <version>${ggbd.VERSION}</version> 
+        <groupId>gg12dbutil</groupId>
+        <artifactId>ggdbutil</artifactId>
+        <version>${ggbd.VERSION}</version>
         <scope>system</scope>
         <systemPath>${gg12.jar.path}/resources/lib/ggdbutil-${ggbd.VERSION}.jar</systemPath>
      </dependency>

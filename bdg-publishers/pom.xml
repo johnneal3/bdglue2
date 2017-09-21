@@ -5,8 +5,8 @@
    <modelVersion>4.0.0</modelVersion>
 
    <parent>
-      <groupId>com.oracle.bdglue</groupId>
-      <artifactId>bdglue</artifactId>
+      <groupId>bdglue2</groupId>
+      <artifactId>bdglue2</artifactId>
       <version>1.3.0.0</version>
       <relativePath>../pom.xml</relativePath>
    </parent>
@@ -27,7 +27,7 @@
 
    <dependencies>
       <dependency>
-         <groupId>com.oracle.bdglue</groupId>
+         <groupId>bdglue2</groupId>
          <artifactId>bdglue-core</artifactId>
          <version>1.3.0.0</version>
       </dependency>
