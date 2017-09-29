@@ -1,0 +1,37 @@
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Using Big Data Glue
+description: Deliver CDC data captured by GoldenGate and other sources into Big Data targets.
+baseurl: "" # the subpath of your site, e.g. /blog
+repository: https://github.com/johnneal3/bdglue2
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+#github_username:  johnneal3
+
+# Build settings
+markdown: kramdown
+
+defaults:
+  -
+    scope:
+      path: "_docs"
+      type: "docs"
+    values:
+      layout: "docs"
+  -
+    scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: "post"
+
+
+collections:
+  docs:
+    permalink: /:collection/:path/
+    output: true
+

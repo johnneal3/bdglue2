@@ -1,0 +1,46 @@
+- title: Getting Started
+  docs:
+  - home
+  - architecture
+  - installation
+
+- title: Sources 
+  docs:
+  - source-intro
+  - goldengate-source
+
+- title: Encoders 
+  docs:
+  - encoder-intro
+  - null-encoder
+  - delimited-encoder
+  - json-encoder
+  - avro-encoder
+
+- title: Publishers
+  docs:
+  - publisher-intro
+  - console-publisher
+  - flume-publisher
+  - kafka-publisher
+  - nosql-publisher
+  - cassandra-publisher
+  - async-hbase-publisher
+  - bigquery-publisher
+
+- title: BDGlue Utilities
+  docs:
+  - schemadef
+
+- title: BDGlue Developer's Guide
+  docs:
+  - dev-overview
+  - custom-encoder
+  - custom-publisher
+
+- title: Properties
+  docs:
+  - properties-bdglue-encoder
+  - properties-bdglue-publisher
+  - properties-bdglue-schema
+  - properties-schemadef
