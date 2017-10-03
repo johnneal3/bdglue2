@@ -11,7 +11,7 @@ encoding formats can be implemented without requiring change elsewhere in the
 code.
 The following diagram illustrates the high level structure of BDGlue.
 
-![BDGlue Architecture Image](/images/bdglue-arch.jpg)
+![BDGlue Architecture Image]({{ "/images/bdglue-arch.jpg" | prepend: site.baseurl }})
 
 Encoding is the process of translating data received from the source into a 
 particular format to facilitate downstream use. Publishing is the process of 

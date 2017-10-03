@@ -20,35 +20,35 @@ all of the relevant build artifacts to a “deploy” directory.
 Note in either case, you will need to set two environment variables:
 
     # GGBD_HOME is the directory where GG for Big Data in installed.
-    # For example, if GG for Big Data is installed at /u01/ggbd12_2, 
+    # For example, if GG for Big Data is installed at /u01/ggbd12_3, 
     # then you would set
     
-    export GGBD_HOME=/u01/ggbd12_2
+    export GGBD_HOME=/u01/ggbd12_3
 
 
 And
 
     # GGBD_VERSION is an environment variable set to the version of the 
     # ggdbutil-VERSION.jar file found in the $GGBD_HOME/ggjava/resources/lib
-    # directory. For example, if the file is named ggdbutil-12.2.0.1.0.012.jar, 
+    # directory. For example, if the file is named ggdbutil-12.3.0.1.0.012.jar, 
     # then you would set
     
-    export GGBD_VERSION=12.2.0.1.0.012
+    export GGBD_VERSION=12.3.0.1.0.012
 
 Download.
 
     # create a directory where you want to install the files
     [ogg@bigdatalite ~]$ mkdir bdglue
     [ogg@bigdatalite ~]$ cd bdglue
-    [ogg@bigdatalite ~]$ git clone https://github.com/bdglue/bdglue
+    [ogg@bigdatalite ~]$ git clone https://github.com/johnneal3/bdglue2
     [ogg@bigdatalite ~]$ export GGBD_HOME=/path/to/gg4bigdata
-    [ogg@bigdatalite ~]$ export GGBD_VERSION=12.2.0.1.0.12
+    [ogg@bigdatalite ~]$ export GGBD_VERSION=12.3.0.1.0.12
 
 
 Build with Make:
 
     [ogg@bigdatalite ~]$ make
-    mvn package -Dggbd.VERSION=12.2.0.1.0.012 -Dggbd.HOME=/u01/ggbd12_2
+    mvn package -Dggbd.VERSION=12.3.0.1.0.012 -Dggbd.HOME=/u01/ggbd12_3
     [INFO] Scanning for projects...
     [INFO]                                                                         
     [INFO] ------------------------------------------------------------------------

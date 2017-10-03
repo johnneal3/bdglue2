@@ -1,9 +1,9 @@
 <ul>
   <li class="{% if page.overview %}current{% endif %}">
-    <a href="/">Home</a>
+    <a href="{{ "/" | prepend: site.baseurl }}">Home</a>
   </li>
   <li class="{% if page.url contains '/docs/' %}current{% endif %}">
-    <a href="/docs/home/">Docs</a>
+    <a href="{{ "/docs/home/" | prepend: site.baseurl }}">Docs</a>
   </li>
   <li>
     <a href="{{ site.repository }}">GitHub</a>

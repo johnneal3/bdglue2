@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: BDGlue Publishers
 permalink: /docs/publisher-intro/
 ---
 A publisher is responsible for understanding how to interface with an external 
@@ -29,6 +29,6 @@ BDGlue was designed to be extended to support new publishers as well. Just as
 with Encoders, this is done by implementing a Java interface, and just as with 
 new encoders this can be done without the need to make changes elsewhere in the 
 code. More information pertaining to creating new publishers can be found in 
-_Building a Custom Publisher_ in the “Developers Guide” section found later 
-in this document.
+[Building a Custom Publisher](../custom-publisher) in the 
+[BDGlue Developers Guide](../dev-overview) section found later in this document.
 

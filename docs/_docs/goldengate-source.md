@@ -12,7 +12,7 @@ A custom handler is deployed as an integral part of an Oracle GoldenGate REPLICA
 
 The REPLICAT process executes the adapter in its address space. The REPLICAT reads the trail file created by the Oracle GoldenGate EXTRACT process and passes the transactions into the adapter. Based on the configuration in the properties file, the adapter will write the transactions in one of several formats.  Please refer to the _Oracle GoldenGate Adapters Administrator’s Guide for Java_ (which can be found on http://docs.oracle.com) for details about the architecture and developing a custom adapter.
 
-![BDGlue GoldenGate Image](/images/bdglue-gg.jpg)
+![BDGlue GoldenGate Image]({{ "/images/bdglue-gg.jpg" | prepend: site.baseurl }})
 
 ### Configuring GoldenGate for BDGlue
 

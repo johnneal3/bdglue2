@@ -10,7 +10,7 @@ Apache Flume is a streaming mechanism that fits naturally with the BDGlue archit
 * In particular, Flume does an outstanding job with its HDFS file handling. If there is a need to stream data from outside of Hadoop into files in HDFS, there may be no better mechanism for doing this.
 * It provides a pluggable architecture that allows custom components to be developed and deployed when needed.
 
-![BDGlue Flume-1 Image](/images/bdglue-flume.jpg)
+![BDGlue Flume-1 Image]({{ "/images/bdglue-flume.jpg" | prepend:site.baseurl }})
 
 To really understand what is going on behind the scenes, it is important that the user have a good understanding of Flume and its various components. 
 
@@ -57,7 +57,7 @@ In addition to the body, each Flume event has a header that contains some meta-i
 
 As mentioned above, the most typical Flume agent configuration will be relatively simple: a single source-channel-sink combination that writes data to specific destinations for each table that is being processed.
 
-![BDGlue Flume-2 Image](/images/bdglue-flume2.jpg)
+![BDGlue Flume-2 Image]({{ "/images/bdglue-flume2.jpg" | prepend: site.baseurl }})
 
 The various “Targets” might be files in HDFS, or perhaps Hive or HBase tables, based on how the properties and configuration files are set up. Our examples in subsequent sections will be based on this configuration and we’ll look at the details of the _bdglue.properties_ and Flume configuration files at that time.
 
@@ -65,7 +65,7 @@ The various “Targets” might be files in HDFS, or perhaps Hive or HBase table
 
 Before that, however, we’ll take a quick look at one other configuration that might prove useful. This configuration is one where a single Flume “source” multiplexes data across multiple channels based on table name, and each channel has its own sink to write the data into Hadoop.
 
-![BDGlue Flume-3 Image](/images/bdglue-flume3.jpg)
+![BDGlue Flume-3 Image]({{ "/images/bdglue-flume3.jpg" | prepend: site.baseurl }})
 
 To configure in this fashion, you’ll need to specify a separate Flume configuration for each channel and sink. If there are a lot of tables that you want to process individually, this could get fairly complicated in a hurry. The following will give you an idea of what such a configuration file might look like. Note that this example is not complete, but it will give you an idea of what might be required to configure the example above.
 

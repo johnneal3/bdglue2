@@ -19,7 +19,9 @@ target/
 dependencies/
 deploy/
 
-# ignore anything in the doc _site directory
+# ignore anything in the doc _site and .sass-cache directories.
+# these are related to generation of the jekyll-based doc
 _site/
+.sass-cache
 
 
