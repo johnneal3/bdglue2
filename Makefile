@@ -3,14 +3,13 @@ MAVEN = mvn
 
 
 install: all
-	mkdir -p $(output_dir)/lib $(output_dir)/doc
+	mkdir -p $(output_dir)/lib 
 	cp $(CURDIR)/*/target/bdglue*.jar $(output_dir)/lib
 	cp $(CURDIR)/*/*/target/bdglue*.jar $(output_dir)/lib
 	#cp -u $(CURDIR)/dependencies/*.jar $(output_dir)/lib/dependencies
 	#cp -u $(CURDIR)/*/*/target/dependencies/*.jar $(output_dir)/lib/dependencies
-	cp -R $(CURDIR)/*/target/apidocs $(output_dir)/doc
-	cp -R $(CURDIR)/*/*/target/apidocs $(output_dir)/doc
-	cp $(CURDIR)/*.pdf $(output_dir)/doc
+	#cp -R $(CURDIR)/*/target/apidocs $(output_dir)/doc
+	#cp -R $(CURDIR)/*/*/target/apidocs $(output_dir)/doc
 
 all: bdglue.jar
 
@@ -19,6 +18,10 @@ all: bdglue.jar
 
 bdglue.jar:  .PHONY
 	$(MAVEN) package -Dggbd.VERSION=$(GGBD_VERSION) -Dggbd.HOME=$(GGBD_HOME)
+
+docs: .PHONY
+	$(MAVEN) javadoc:aggregate -Dggbd.VERSION=$(GGBD_VERSION) -Dggbd.HOME=$(GGBD_HOME)
+
 
 clean: .PHONY
 	$(MAVEN) clean

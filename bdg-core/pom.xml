@@ -23,13 +23,6 @@
    </repositories>
    <dependencies>
      <dependency>
-        <groupId>gg12dbutil</groupId>
-        <artifactId>ggdbutil</artifactId>
-        <version>${ggbd.VERSION}</version>
-        <scope>system</scope>
-        <systemPath>${gg12.jar.path}/resources/lib/ggdbutil-${ggbd.VERSION}.jar</systemPath>
-     </dependency>
-     <dependency>
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-api</artifactId>
         <version>1.7.21</version>
