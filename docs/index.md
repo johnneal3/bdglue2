@@ -1,9 +1,9 @@
 ---
+title: Big Data Glue (Version 2)
 layout: docs
 sidebar: toc
 ---
 
-## Big Data Glue (Version 2)
 BDGlue2 (like the original BDGlue) is intended to be a general purpose library
 for delivering data from Java applications into various Big Data targets
 in a number of different data formats. The idea was to create a “one stop
