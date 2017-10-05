@@ -1,33 +1,10 @@
-<footer class="site-footer">
-
-  <div class="wrapper">
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <p>{{ site.title }}</p>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
-      </div>
+<footer>
+  <div class="grid">
+    <div class="unit one-third center-on-mobiles">
+      <p>The contents of this website are <br />&copy;&nbsp;{{ site.time | date: '%Y' }} under the terms of the <a href="{{ site.repository }}/blob/master/LICENSE">Apache&nbsp;2.0&nbsp;License</a>.</p>
     </div>
-
+    <div class="unit two-thirds align-right center-on-mobiles">
+      <p>BDGlue2: {{ site.description }}</p>
+    </div>
   </div>
-
 </footer>

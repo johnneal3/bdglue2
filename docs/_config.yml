@@ -6,12 +6,11 @@
 
 # Site settings
 title: Using Big Data Glue
-description: Deliver CDC data captured by GoldenGate and other sources into Big Data targets.
+description: Deliver data from sources including GoldenGate into Big Data targets.
 
+url: "http://johnneal3.github.io" # the base hostname & protocol for your site
 baseurl: "/bdglue2" # the subpath of your site, e.g. /mygithubproject
 repository: https://github.com/johnneal3/bdglue2
-url: "http://johnneal3.github.io" # the base hostname & protocol for your site
-#github_username:  johnneal3
 
 # Build settings
 markdown: kramdown

@@ -28,17 +28,17 @@
   - async-hbase-publisher
   - bigquery-publisher
 
-- title: BDGlue Utilities
+- title: Utilities
   docs:
   - schemadef
 
-- title: BDGlue Developer's Guide
+- title: Developer's Guide
   docs:
   - dev-overview
   - custom-encoder
   - custom-publisher
 
-- title: Properties
+- title: Configuration
   docs:
   - properties-bdglue-encoder
   - properties-bdglue-publisher

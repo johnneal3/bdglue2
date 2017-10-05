@@ -1,12 +1,7 @@
 ---
-layout: default
+layout: docs
 sidebar: toc
 ---
-<ul>
-    {% for item in site.data.navigation[page.sidebar] %}
-      <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-    {% endfor %}
-</ul>
 
 ## Big Data Glue (Version 2)
 BDGlue2 (like the original BDGlue) is intended to be a general purpose library
