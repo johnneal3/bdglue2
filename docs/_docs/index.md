@@ -31,7 +31,7 @@ Hortonworks, and MapR.
 
 The source code for BDGlue is freely available and may be found on GitHub at: 
 
-http://github.com/johnneal3/bdglue2
+<http://github.com/johnneal3/bdglue2>
 
 ## Licensing
 

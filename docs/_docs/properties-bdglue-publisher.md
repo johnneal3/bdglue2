@@ -10,7 +10,7 @@ bdglue.publisher.class|Yes|String|bdglue2.publisher.console. ConsolePublisher|"T
 |||||* bdglue2.publisher.console.ConsolePublisher (writes the encoded data to the console. Useful for smoke testing upstream configurations before worrying about actually delivering data to a target. Json encoding is perhaps most useful for this.
 |||||* bdglue2.publisher.flume.FlumePublisher (delivers encoded data to Flume).
 |||||* bdglue2.publisher.hbase.HBasePublisher (delivers data to HBase. The NullEncoder should be used for this publisher).
-|||||* bdglue2.publisher.nosql.NoSQLPublisher (delivers to OracleNoSQL. Use the AvroEncoder for the KV API, and NullEncoder for the Table API).
+|||||* bdglue2.publisher.nosql.NoSQLPublisher (delivers to Oracle NoSQL. Use the AvroEncoder for the KV API, and NullEncoder for the Table API).
 |||||* bdglue2.publisher.kafka.KafkaPublisher (delivers to Kafka. The AvroEncoder and JsonEncoder are perhaps most useful for this publisher). Note: this publisher uses an older Kafka API and is included for reasons of compatibility.
 |||||* bdglue2.publisher.kafka.KafkaRegistryPublisher (delivers to Kafka using the newer Kafka API. This publisher is also compatible with the Confluent “schema registry”, although interfacing with the registry is not strictly required to use this publisher.)
 |||||* bdglue2.publisher.cassandra.CassandraPublisher (delivers data to Cassandra. The NullEncoder should be used for this publisher).

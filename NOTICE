@@ -2,7 +2,8 @@ Big Data Glue V2 (BDGlue2)
 
 This product was originally developed by the author while
 at Oracle (http://www.oracle.com) and released as open source
-(https://github.com/oracle/bdglue).
+(https://github.com/oracle/bdglue). "BDGlue2" represents  the
+ongoing maintenance of this code "post Oracle."
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

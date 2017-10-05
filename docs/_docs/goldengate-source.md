@@ -6,11 +6,11 @@ When linked with BDGlue, the GoldenGate Java Adapter becomes a fully functional 
 
 BDGlue is intended as a starting point for exploring Big Data architectures from the perspective of real-time change data capture (CDC) as provided by GoldenGate. As mentioned in the introduction, Hadoop and other Big Data technologies are by their very natures constantly evolving and infinitely configurable. 
 
-A GoldenGate Java Adapter is referred to as a “Custom Handler” in the GoldenGate Java Adapter documentation. This “custom handler” integration with BDGlue is developed using Oracle GoldenGate's Java API.
+A GoldenGate Java Adapter is referred to as a “Custom Handler” in the GoldenGate Java Adapter documentation. This “custom handler” integration with BDGlue is developed using GoldenGate's Java API.
 
-A custom handler is deployed as an integral part of an Oracle GoldenGate REPLICAT process.  The REPLCIAT and the custom handler are configured through a REPLICAT parameter file and the adapter's properties file.  We will discuss the various properties files in more detail later in this document. 
+A custom handler is deployed as an integral part of a GoldenGate REPLICAT process.  The REPLCIAT and the custom handler are configured through a REPLICAT parameter file and the adapter's properties file.  We will discuss the various properties files in more detail later in this document. 
 
-The REPLICAT process executes the adapter in its address space. The REPLICAT reads the trail file created by the Oracle GoldenGate EXTRACT process and passes the transactions into the adapter. Based on the configuration in the properties file, the adapter will write the transactions in one of several formats.  Please refer to the _Oracle GoldenGate Adapters Administrator’s Guide for Java_ (which can be found on http://docs.oracle.com) for details about the architecture and developing a custom adapter.
+The REPLICAT process executes the adapter in its address space. The REPLICAT reads the trail file created by the GoldenGate EXTRACT process and passes the transactions into the adapter. Based on the configuration in the properties file, the adapter will write the transactions in one of several formats.  Please refer to the _Oracle GoldenGate Adapters Administrator’s Guide for Java_ (which can be found on http://docs.oracle.com) for details about the architecture and developing a custom adapter.
 
 ![BDGlue GoldenGate Image]({{ "/images/bdglue-gg.jpg" | prepend: site.baseurl }})
 

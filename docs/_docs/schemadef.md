@@ -19,7 +19,7 @@ CLASSPATH="$CLASSPATH:$DIR/jackson-core-asl-1.9.13.jar"
 CLASSPATH="$CLASSPATH:$DIR/mysql-connector-java-5.1.34-bin.jar"
 #
 java –Dschemadef.properties=schemadef.properties -cp $CLASSPATH
-                com.oracle.bdglue.utility.schemadef.SchemaDef
+                bdglue2.utility.schemadef.SchemaDef
 ```
 
 Note that the last jar file listed is specific to the database you will be connecting to. In this case, it is MySQL. Replace this jar file with the jar file that is appropriate for your database type and version. **NOTE: It is up to you to obtain the appropriate JDBC driver for your database platform and version, and to identify the appropriate connection URL and login credentials.**
